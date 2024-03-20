@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.echoesapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_sign_up"
+            app:destination="@id/sign_up" />
+        <action
+            android:id="@+id/action_login_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.echoesapp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/sign_up"
+        android:name="com.example.echoesapp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_sign_up_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.echoesapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_pictoMain"
+            app:destination="@id/pictoMain" />
+        <action
+            android:id="@+id/action_home2_to_add_reminder"
+            app:destination="@id/add_reminder" />
+        <action
+            android:id="@+id/action_home2_to_reminders_home"
+            app:destination="@id/reminders_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/pictoMain"
+        android:name="com.example.echoesapp.PictoMain"
+        android:label="fragment_picto_main"
+        tools:layout="@layout/fragment_picto_main" >
+        <action
+            android:id="@+id/action_pictoMain_to_pictoRecycler"
+            app:destination="@id/pictoRecycler" />
+        <action
+            android:id="@+id/action_pictoMain_to_picto_recycler_comer"
+            app:destination="@id/picto_recycler_comer" />
+        <action
+            android:id="@+id/action_pictoMain_to_picto_recycler_dolor"
+            app:destination="@id/picto_recycler_dolor" />
+        <action
+            android:id="@+id/action_pictoMain_to_picto_recycler_ocio"
+            app:destination="@id/picto_recycler_ocio" />
+    </fragment>
+    <fragment
+        android:id="@+id/pictoRecycler"
+        android:name="com.example.echoesapp.PictoRecyclerAseo"
+        android:label="fragment_picto_recycler"
+        tools:layout="@layout/fragment_picto_recycler_aseo" />
+    <fragment
+        android:id="@+id/pictoViewHolder"
+        android:name="com.example.echoesapp.PictoViewHolder"
+        android:label="fragment_picto_view_holder"
+        tools:layout="@layout/fragment_picto_view_holder" />
+    <fragment
+        android:id="@+id/reminders_home"
+        android:name="com.example.echoesapp.RemindersHome"
+        android:label="fragment_reminders_home"
+        tools:layout="@layout/fragment_reminders_home" />
+    <fragment
+        android:id="@+id/add_reminder"
+        android:name="com.example.echoesapp.AddReminder"
+        android:label="fragment_add_reminder"
+        tools:layout="@layout/fragment_add_reminder" >
+        <action
+            android:id="@+id/action_add_reminder_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/reminder_view_holder"
+        android:name="com.example.echoesapp.ReminderViewHolder"
+        android:label="fragment_reminder_view_holder"
+        tools:layout="@layout/fragment_reminder_view_holder" />
+    <fragment
+        android:id="@+id/picto_recycler_comer"
+        android:name="com.example.echoesapp.PictoRecyclerComer"
+        android:label="fragment_picto_recycler_comer"
+        tools:layout="@layout/fragment_picto_recycler_comer" />
+    <fragment
+        android:id="@+id/picto_recycler_dolor"
+        android:name="com.example.echoesapp.PictoRecyclerDolor"
+        android:label="fragment_picto_recycler_dolor"
+        tools:layout="@layout/fragment_picto_recycler_dolor" />
+    <fragment
+        android:id="@+id/picto_recycler_ocio"
+        android:name="com.example.echoesapp.PictoRecyclerOcio"
+        android:label="fragment_picto_recycler_ocio"
+        tools:layout="@layout/fragment_picto_recycler_ocio" />
+
+</navigation>

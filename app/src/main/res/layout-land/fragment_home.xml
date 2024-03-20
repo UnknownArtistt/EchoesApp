@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="236dp"
+            android:layout_height="229dp"
+            android:layout_marginStart="60dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/echoeslogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/echoeslogo" />
+
+        <Button
+            android:id="@+id/pictoBtn"
+            android:layout_width="335dp"
+            android:layout_height="76dp"
+            android:backgroundTint="#009688"
+            android:text="@string/pictogramasBtn"
+            android:textSize="18sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/recordatorioBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logoImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/addRecBtn"
+            android:layout_width="335dp"
+            android:layout_height="76dp"
+            android:backgroundTint="#009688"
+            android:text="@string/AddReminderBtn"
+            android:textSize="18sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logoImage"
+            app:layout_constraintTop_toBottomOf="@+id/recordatorioBtn" />
+
+        <Button
+            android:id="@+id/recordatorioBtn"
+            android:layout_width="335dp"
+            android:layout_height="76dp"
+            android:backgroundTint="#009688"
+            android:text="@string/recordatoriosBtn"
+            android:textSize="18sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/addRecBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logoImage"
+            app:layout_constraintTop_toBottomOf="@+id/pictoBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

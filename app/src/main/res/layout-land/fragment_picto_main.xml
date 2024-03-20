@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PictoMain">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/quiero_ocio"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDolor"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonOcio"
+            app:layout_constraintTop_toBottomOf="@+id/textViewComer" />
+
+        <ImageButton
+            android:id="@+id/imageButtonOcio"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:foreground="@drawable/ocio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonComer"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDolor"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:foreground="@drawable/dolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewDolor"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonAseo" />
+
+        <TextView
+            android:id="@+id/textViewDolor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/me_duele"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonDolor"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAseo" />
+
+        <ImageButton
+            android:id="@+id/imageButtonComer"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:foreground="@drawable/comer"
+            app:layout_constraintBottom_toTopOf="@+id/textViewComer"
+            app:layout_constraintEnd_toStartOf="@+id/textViewComer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAseo"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:foreground="@drawable/aseopersonal"
+            app:layout_constraintBottom_toTopOf="@+id/imageButtonDolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewAseo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewComer"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/quiero_comer_beber"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/textViewAseo"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonComer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAseo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/quiero_asearme"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDolor"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonAseo"
+            app:layout_constraintStart_toEndOf="@+id/textViewComer"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

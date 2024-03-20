@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PictoViewHolder"
+    android:layout_width="match_parent"
+    android:layout_height="229dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/pictoImage"
+        android:layout_width="100dp"
+        android:layout_height="168dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/pictoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

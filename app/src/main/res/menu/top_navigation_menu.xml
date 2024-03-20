@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hoy"
+        android:title="@string/hoy" />
+    <item
+        android:id="@+id/semana"
+        android:title="@string/semana" />
+    <item
+        android:id="@+id/mes"
+        android:title="@string/mes" />
+    <item
+        android:id="@+id/todos"
+        android:title="@string/todos" />
+</menu>

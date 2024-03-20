@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="236dp"
+            android:layout_height="229dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="80dp"
+            android:src="@drawable/echoeslogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/loginButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordLoginText"
+            android:layout_width="275dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:hint="@string/LoginPwd"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/loginButton"
+            app:layout_constraintEnd_toStartOf="@+id/showBtn" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginBottom="104dp"
+            android:backgroundTint="#000000"
+            android:text="@string/LoginBtn"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="460dp"
+            android:layout_marginBottom="52dp"
+            android:text="@string/CreateAc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/goToSignUp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/goToSignUp"
+            android:layout_width="118dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="36dp"
+            android:backgroundTint="#009688"
+            android:text="@string/SignUpBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/userLoginText"
+            android:layout_width="275dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="124dp"
+            android:ems="10"
+            android:hint="@string/LoginHint"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/passwordLoginText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <Button
+            android:id="@+id/showBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#009688"
+            android:text="@string/LoginShow"
+            android:textSize="12sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
